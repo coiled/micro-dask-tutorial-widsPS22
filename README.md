@@ -1,15 +1,55 @@
-# Dask Binder template
+# WiDS Puget Sound 2022 Dask Workshop
+Short workshop (~45 minutes) introducing Dask to Data Scientists. Materials include:
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/jrbourbeau/dask-binder-template/main?urlpath=lab)
+1.
+2.
+3.
 
-A template for Dask-enabled repositories for use on [Binder](https://mybinder.org/). Specifically, this template ensures that Dask and [Dask's JupyterLab extension](https://github.com/dask/dask-labextension) are installed and configured for use on mybinder.org.
+## Prerequisites
+Participants should be familiar with Python, Jupyter Notebook, and the PyData Ecosystem (e.g. pandas and Scikit-Learn), but no former knowledge of Dask is required.
 
-## How to use
+## Getting set up
+There are two options for this workshop:
+1. Click on this binder button [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/coiled/micro-dask-tutorial-widsPS22/main?urlpath=lab). This will spin up the necessary software environment to use the notebooks interactively from the browser. Binder is a free service, so resources are not guaranteed. Due to this limitation, sometimes you will not see the same efficiency gains with Dask as you would see otherwise.
 
-1. Click the "Use this template" button
-2. Change files in the ``binder/`` directory to customize your Jupyter environment
-3. Add new notebooks
-4. Change the ![Binder](https://mybinder.org/badge_logo.svg) button URL below to point to your repository (i.e. change `jrbourbeau/dask-binder-template` to your repository)
-5. Share with your friends and colleagues!
+2. Create your own environment locally. If you're comfortable with GitHub and creating software environments, then follow the next steps:
 
-This template was inspired by [Pangeo's binder template](https://github.com/pangeo-data/pangeo-binder-template) and my own need to repeatedly create repositories with Dask's JupyterLab extension configured.
+
+    1. **Clone this repository**
+        
+        In your terminal:
+
+        ```
+        git clone https://github.com/coiled/micro-dask-tutorial-widsPS22.git
+        ```
+        
+        If unfamiliar with git, you can download the zip file of this repository at the top of the main page of the repository.
+        
+    2. **Download Anaconda** 
+    
+        If you do not have anaconda installed, you will need the Python 3 [Anaconda Distribution](https://www.anaconda.com/products/individual).
+    
+    3. **Create a conda environment**
+        
+        In your terminal navigate to the directory where you have cloned the `micro-dask-tutorial-widsPS22` repo and install the required packages by doing:
+
+        ```
+        conda env create -f binder/environment.yml
+        ```
+
+        This will create a new environment called `micro-dask-tutorial-widsPS22`. To activate the environment run:
+
+        ```
+        conda activate micro-dask-tutorial-widsPS22
+        ```
+
+    4. **Run Jupyter Lab**
+        
+        Once your environment has been activated and you are in the `micro-dask-tutorial-widsPS22` repository, in your terminal do:
+
+        ```
+        jupyter lab
+        ```
+
+        Open the `notebooks` directory for the workshop materials.
+

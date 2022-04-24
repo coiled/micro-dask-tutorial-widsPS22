@@ -1,10 +1,14 @@
-name: dask-binder-template
+name: micro-dask-tutorial-widsPS22
 channels:
   - conda-forge
+  - nodefaults
 dependencies:
   - python=3.9
-  - dask=2021.03.0
-  # JupyterLab extensions
-  - jupyterlab>=3
-  - dask-labextension
-  - ipywidgets
+  - coiled-runtime
+  - plotly=5.5.0
+  - pip
+  - pip:
+    - sodapy
+    - pystan==2.19.1.1
+    - prophet
+
