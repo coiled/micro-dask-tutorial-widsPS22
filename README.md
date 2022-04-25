@@ -1,9 +1,9 @@
 # WiDS Puget Sound 2022 Dask Workshop
 Short workshop (~45 minutes) introducing Dask to Data Scientists. Materials include:
 
-1.
-2.
-3.
+1. Overview: What is Dask and when should I use it?
+2. Interactive example using Dask Delayed, Bag, and DataFrame collections.
+3. Summary, FAQs, and resources.
 
 ## Prerequisites
 Participants should be familiar with Python, Jupyter Notebook, and the PyData Ecosystem (e.g. pandas and Scikit-Learn), but no former knowledge of Dask is required.
@@ -52,4 +52,7 @@ There are two options for this workshop:
         ```
 
         Open the `notebooks` directory for the workshop materials.
+
+## Credit!
+This workshop was adapted from the numerous great publicly available Dask materials including the [Dask Binder template from @jrbourbeau](https://github.com/jrbourbeau/dask-binder-template) and the [Dask Live by Coiled tutorial from @ncclementi](https://github.com/coiled/dask-mini-tutorial).
 
