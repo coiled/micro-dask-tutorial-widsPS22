@@ -15,8 +15,17 @@ dependencies:
   - pyarrow==7.0.0
   - ipywidgets==7.7.0
   - plotly==5.7.0
+  - matplotlib==3.5.1
   - pip
   - pip:
     - sodapy==2.1.1
+    # for Prophet package
     - pystan==2.19.1.1
     - prophet==1.0.1
+    - Cython==0.29.28
+    - cmdstanpy==0.9.68
+    - LunarCalendar==0.0.9
+    - convertdate==2.4.0
+    - holidays==0.13
+    - setuptools-git==1.2
+    - tqdm==4.64.0
